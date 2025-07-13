@@ -1,0 +1,27 @@
+Full disassembly of binary:
+0x0000: 0181  addi a0, 0
+0x0002: 1541  addi t1, 10
+0x0004: 29c1  addi a1, 20
+0x0006: 0bf8  mv a1, t1
+0x0008: 0f78  mv t1, a1
+0x000a: 0ff8  mv a1, a1
+0x000c: 00c7  ecall 3
+
+Execution simulation trace:
+0x0000: 0181  addi a0, 0
+0x0002: 1541  addi t1, 10
+0x0004: 29c1  addi a1, 20
+0x0006: 0bf8  mv a1, t1
+0x0008: 0f78  mv t1, a1
+0x000a: 0ff8  mv a1, a1
+0x000c: 00c7  ecall 3
+
+Final register state:
+t0 = 0x0000
+ra = 0x0000
+sp = 0xfffe
+s0 = 0x0000
+s1 = 0x0000
+t1 = 0x000a
+a0 = 0x0000
+a1 = 0x000a
